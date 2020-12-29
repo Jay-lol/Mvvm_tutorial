@@ -1,0 +1,5 @@
+include ':kakao_search'
+include ':kakao_search'
+include ':kakao_search'
+include ':app'
+rootProject.name = "KaKaoImageSearch"

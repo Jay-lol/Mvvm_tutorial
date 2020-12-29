@@ -1,6 +1,7 @@
 package com.jay.mvvmtest
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
@@ -51,6 +52,7 @@ abstract class BaseKotlinActivity<T : ViewDataBinding, R : BaseKotlinViewModel> 
 
         viewDataBinding = DataBindingUtil.setContentView(this, layoutResourceId)
 
+        Log.d("로그", "BaseKotlinActivity ~ onCreate() called")
         initStartView()
         initDataBinding()
         initAfterBinding()

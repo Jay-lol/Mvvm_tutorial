@@ -1,6 +1,5 @@
 package com.jay.viewmodellivedata
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -17,11 +16,9 @@ class UserAdapter(userDataList: ArrayList<UserDataList>, viewModelT: MainViewMod
         ), viewModel)
     }
 
-
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         holder.bind(list[position])
     }
-
 
     override fun getItemCount(): Int {
         return list.size
